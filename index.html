@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14305f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NIA Reader">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>NIA Law Reader</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="app">
+<header><div class="top"><button class="back" id="back" aria-label="Back">&#8592;</button><h1 id="title"></h1><button class="iconbtn" id="menuBtn">Data</button></div><div class="crumbs" id="crumbs"></div></header>
+<main id="main"></main>
+<div class="pager" id="pager" hidden><button id="prev">&#8592; Previous</button><button id="next">Next &#8594;</button></div>
+<nav id="tabs">
+<a href="#/resources" data-t="resources"><svg viewBox="0 0 24 24"><path d="M3 7h6l2 2h10v10H3z"/></svg>Resources</a>
+<a href="#/offices" data-t="offices"><svg viewBox="0 0 24 24"><path d="M4 21V4h10v17M14 9h6v12M7 8h4M7 12h4M7 16h4"/></svg>Offices</a>
+<a href="#/courts" data-t="courts"><svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5M5 10v8M10 10v8M14 10v8M19 10v8M3 20h18"/></svg>Courts</a>
+<a href="#/login" data-t="login"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>Login</a>
+</nav>
+</div>
+<dialog id="dlg"></dialog>
+<script src="seed.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
